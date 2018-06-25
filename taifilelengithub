@@ -1,0 +1,16 @@
+#!/bin/bash
+#Tải các file lên github
+#Tài khoản tuananh1406
+#pass t*****a5
+#cd ssg/
+url=git@github.com:tuananh1406/qlchitieu.git
+#git init
+#git config --global user.email "huutuananh1406@gmail.com"
+#git config --global user.name "Hữu Tuấn Anh"
+git -C "/home/htuananh/Màn hình nền/pmquanly/qlchitieu" add --all
+mota="Update ngày $(date +%d/%m/%Y)";
+git -C "/home/htuananh/Màn hình nền/pmquanly/qlchitieu" commit -m "$mota"
+git -C "/home/htuananh/Màn hình nền/pmquanly/qlchitieu" remote add origin $url
+git -C "/home/htuananh/Màn hình nền/pmquanly/qlchitieu" remote -v
+git -C "/home/htuananh/Màn hình nền/pmquanly/qlchitieu" push -f origin master
+

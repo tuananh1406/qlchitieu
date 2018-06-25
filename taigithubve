@@ -1,0 +1,6 @@
+#!/bin/bash
+#Tải reposite github về
+#url=git@github.com:tuananh1406/website.git
+#git clone $url
+#cập nhật git
+git pull
