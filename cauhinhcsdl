@@ -1,0 +1,8 @@
+#Khởi tạo csdl cho phần mềm
+CREATE SCHEMA chitieu;
+CREATE TABLE chitieu.dmtaikhoan (stt SERIAL, tentaikhoan VARCHAR, mataikhoan VARCHAR PRIMARY KEY, ghichu VARCHAR);
+CREATE TABLE chitieu.dmhangmuc (stt SERIAL, tenhangmuc VARCHAR, mahangmuc VARCHAR PRIMARY KEY, ghichu VARCHAR);
+CREATE TABLE chitieu.dmloaihangmuc (stt SERIAL, tenloai VARCHAR, maloai VARCHAR PRIMARY KEY, ghichu VARCHAR);
+CREATE TABLE chitieu.dmnguoidung (stt SERIAL, tennguoidung VARCHAR, manguoidung VARCHAR PRIMARY KEY, ghichu VARCHAR);
+
+
